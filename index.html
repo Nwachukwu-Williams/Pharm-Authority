@@ -93,7 +93,7 @@
 
 
     <!-- for the introduction  -->
-    <section class="intro">
+    <section id="intro">
         <h2>Pharm Authority</h2>
         <p>At Pharm Authority, we are proud to be an international healthcare exporter, distributor, and drop shipper. Our primary mission is to identify and introduce meaningful products that address unmet medical needs.
             <br><br>We place a strong emphasis on quality and service, ensuring that our customers receive safe and effective healthcare products.</p>
@@ -102,7 +102,7 @@
     </section>
 
     <!-- for the Categories nav bar -->
-    <nav class="categories-nav">
+    <nav id="categories-nav">
         <ul>
             <li>
                 <a href="">Best Sellers</a>
@@ -132,7 +132,7 @@
             </li>
         </ul>
         <div id="search">
-            <input type="text" id="search-value" placeholder="Search product">
+            <input type="search" id="search-value" placeholder="Search product">
             <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7.76685 0.5C12.0478 0.5 15.5338 3.98604 15.5338 8.26699C15.5338 10.1268 14.8815 11.8319 13.7863 13.1699L19.4173 18.801C19.7256 19.1093 19.7256 19.6092 19.4173 19.9175C19.109 20.2258 18.6091 20.2258 18.3008 19.9175L12.6698 14.2864C11.3318 15.3817 9.62668 16.034 7.76685 16.034C3.4859 16.034 -0.000143051 12.5479 -0.000143051 8.26699C-0.000143051 3.98604 3.4859 0.5 7.76685 0.5ZM7.76685 2.0534C4.32631 2.0534 1.55326 4.82646 1.55326 8.26699C1.55326 11.7075 4.32631 14.4806 7.76685 14.4806C11.2074 14.4806 13.9804 11.7075 13.9804 8.26699C13.9804 4.82646 11.2074 2.0534 7.76685 2.0534Z" fill="#777777"/>
             </svg>
@@ -140,12 +140,12 @@
     </nav>
 
     <!-- promotions -->
-    <section class="promotions">
+    <section id="promotions">
         <h2>Promotions</h2>
     </section>
 
     <!-- Best sellers  -->
-    <section class="best-sellers">
+    <section id="best-sellers">
         <h2>Best Sellers</h2>
         <div class="products">
             <div class="product">
@@ -177,15 +177,18 @@
                 </div>
             </div>
         </div>
-        <button class="button-1">View More 
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
-            </svg>               
-        </button>
+        <a href="#">
+            <button class="button-1">
+                <p>View More</p>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
+                </svg>               
+            </button>
+        </a>
     </section>
 
     <!-- ED section  -->
-    <section class="ed">
+    <section id="ed">
         <h2>Erectile Dysfunction</h2>
         <div class="products">
             <div class="product">
@@ -217,54 +220,240 @@
                 </div>
             </div>
         </div>
-        <button class="button-1">View More 
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
-            </svg>               
-        </button>
+        <a href="#">
+            <button class="button-1">
+                <p>View More</p>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
+                </svg>               
+            </button>
+        </a>
     </section>
 
     <!-- Top categories  -->
-    <section class="categories">
+    <section id="categories">
         <h2>Top Categories</h2>
         <div>
-            <div class="c-ed">
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div class="c-hair">
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div class="c-skin">
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div class="herbal">
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div class="c-HIV">
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div class="c-mental">
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div class="c-specialty">
-                <p>Erectile Dysfunction</p>
-            </div>
+            <a href="#">
+                <div class="c-ed">
+                    <p>Erectile Dysfunction</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-hair">
+                    <p>Hair Care</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-skin">
+                    <p>Skin Care</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-herbal">
+                    <p>Herbal</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-HIV">
+                    <p>HIV/AIDS Medications</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-mental">
+                    <p>Mental Health</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-specialty">
+                    <p>Specialty Medications</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-weight">
+                    <p>Weight Management</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-men">
+                    <p>Men’s Health</p>
+                </div>
+            </a>
+            <a href="">
+                <div class="c-women">
+                    <p>Women’s Health</p>
+                </div>
+            </a>
+        </div>
+        <a href="#">
+            <button class="button-1">
+                <p>View More</p>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
+                </svg>               
+            </button>
+        </a>
+    </section>
+
+    <!-- About us -->
+    <section id="about">
+        <img src="/images/about us.svg" alt="Illustration of a team">
+        <div>
+            <h2>About Us</h2>
+            <p>At Pharm Authority, we are proud to be an international healthcare exporter, distributor, and drop shipper. Our primary mission is to identify and introduce meaningful products that address unmet medical needs. We place a strong emphasis on
+                quality and service, ensuring that our customers receive safe and effective healthcare products.</p>
+            <a href="">
+                <button class="button-2">
+                    <p>Read About Us</p>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="#16AE44"/>
+                    </svg>                        
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- Refund policy -->
+    <section id="refund">
+        <div>
+            <h2>Refund And Return Policy</h2>
+            <p>Before returning or requesting for refund on any purchase made, please ensure to carefully read and review our refund and return policy.</p>
             <div>
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div>
-                <p>Erectile Dysfunction</p>
-            </div>
-            <div>
-                <p>Erectile Dysfunction</p>
+                <a href="#"><button>Return A Product</button></a>
+                <a href="#">
+                    <button>
+                        <p>Refund And Return Policy</p>
+                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="#16AE44"/>
+                        </svg>
+                    </button>
+                </a>
             </div>
         </div>
-        <button class="button-1">View More 
-            <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
-            </svg>               
-        </button>
+        <img src="/images/paper-cash-bundle-with-red-arrow-money-exchange.png" alt="Cash Bundle">
     </section>
+
+    <!-- Blog -->
+    <section id="blog">
+        <h2>Blog</h2>
+        <div>
+            <a href="#">
+                <div class="post">
+                    <img src="/images/romantic-couple-eating-ice-cream-together-and-watc-2023-11-27-04-54-47-utc.webp" alt="Romantic couple">
+                    <p>Understanding the Basics of Vardenafil and Dapoxetine.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="post">
+                    <img src="/images/woman-comforting-man-wearing-pajamas-suffering-wit-2023-11-27-04-56-07-utc.webp" alt="woman comforting man">
+                    <p>The Hidden Hindrance: Unraveling the Impacts of Erectile Dysfunction on Work Productivity and Awareness.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="post">
+                    <img src="/images/women-standing-by-each-other-2023-11-27-05-32-41-utc.webp" alt="women standing by each other">
+                    <p>The Ability of Retinoids to Reduce Wrinkles and Skin Aging.</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="post">
+                    <img src="/images/stethoscope-laptop-and-pills-on-the-white-table-2023-11-27-05-04-17-utc.webp" alt="stethoscope">
+                    <p>Innovative Healthcare Solutions: Pharm Authority’s Commitment to Unmet Medical Needs.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer>
+        <div class="logo">
+            <a href="#"><img src="/images/logo.svg" alt="Company logo"></a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">,<h3>Erectile Dysfunction</h3></a>
+                </li>
+                <li>
+                    <a href="#">Dapoxetine</a>
+                </li>
+                <li>
+                    <a href="#">Generic Cialis (Tadalafil)</a>
+                </li>
+                <li>
+                    <a href="#">Generic Levitra (Vardenafil)</a>
+                </li>
+                <li>
+                    <a href="#">Generic Satendra (Avanafil)</a>
+                </li>
+                <li>
+                    <a href="#">Generic Viagra (Sildenafil Citrate)</a>
+                </li>
+                <li>
+                    <a href="#">Sildenafil + Dapoxetine</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>Quick Links</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">About Us</a>
+                </li>
+                <li>
+                    <a href="#">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#">Become An Affiliate</a>
+                </li>
+                <li>
+                    <a href="#">My Account</a>
+                </li>
+                <li>
+                    <a href="#">Shopping Policy</a>
+                </li>
+                <li>
+                    <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#">Refund And Return Policy</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <a href="#">,<h3>Customer Service</h3></a>
+                </li>
+                <li>
+                    <a href="#">My Profile</a>
+                </li>
+                <li>
+                    <a href="#">Order Tracking</a>
+                </li>
+                <li>
+                    <a href="#">My Orders</a>
+                </li>
+                <li>
+                    <a href="#">My Wishlist</a>
+                </li>
+                <li>
+                    <a href="#">FAQs</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Send Us An Email</h3>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <button class="button-1">Send</button>
+        </div>
+    </footer>
 </body>
 
 </html>
