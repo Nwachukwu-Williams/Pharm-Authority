@@ -1,0 +1,157 @@
+:root {
+    --primary-color: #0E133A;
+    --secondary-color: #16AE44;
+    --stroke-color: #E5E5E5;
+    --background-color: #ffffff;
+}
+
+* {
+    padding: 0%;
+    margin: 0;
+}
+
+.logo {
+    width: 84px;
+    height: 44px;
+}
+
+h1 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+h2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1440px;
+    padding: 100px;
+    width: fit-content;
+    flex-grow: 1;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    gap: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.button-1 {
+    background: var(--secondary-color);
+    border: none;
+    color: white;
+}
+
+.button-2 {
+    background-color: transparent;
+    box-sizing: border-box;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav.page-nav {
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--stroke-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: sticky;
+    top: 0%;
+    background-color: white;
+}
+
+nav.page-nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    height: 60px;
+}
+
+nav ul,
+nav .account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav.page-nav ul a {
+    color: black;
+    padding: 20px 10px;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+nav.page-nav a.active {
+    font-weight: bold;
+}
+
+nav.page-nav ul a:hover {
+    background-color: var(--stroke-color);
+}
+
+nav .account {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    border: 1px solid var(--stroke-color);
+    border-radius: 50px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+nav .account button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 50px 0px 0px 50px;
+    background-color: transparent;
+}
+
+nav button.cart {
+    border-radius: 0px 50px 50px 0px;
+}
+
+header {
+    display: flex;
+}
