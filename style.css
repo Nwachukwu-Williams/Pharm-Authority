@@ -112,7 +112,7 @@ nav.page-nav {
     top: 0%;
     background-color: white;
     z-index: 99;
-    height: 85px;
+    height: 70px;
 }
 
 nav.page-nav .container {
@@ -299,7 +299,7 @@ header p {
     align-items: center;
     justify-content: center;
     position: sticky;
-    top: 60px;
+    top: 70px;
     background-color: white;
     width: 100%;
     border-bottom: 1px solid var(--stroke-color);
