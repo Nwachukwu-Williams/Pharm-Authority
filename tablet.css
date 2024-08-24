@@ -1,6 +1,5 @@
 @media (max-width: 1366px) {
     .container {
-        max-width: 1200px;
         padding: 50px;
     }
     button {
@@ -11,6 +10,9 @@
     }
     h1 {
         font-size: 3rem;
+    }
+    nav.page-nav {
+        height: 60px;
     }
     nav.page-nav .container {
         padding: 0px 50px;
@@ -23,15 +25,15 @@
     }
     header p {
         font-size: 1.5rem;
-    }
-    header p {
         max-width: 363px;
     }
     #benefits .container {
-        gap: 10px;
         padding-bottom: 20px;
     }
-    #benefits .container div {
+    #benefits .container>div {
+        gap: 10px;
+    }
+    #benefits .container div div {
         padding: 20px;
     }
     #benefits p {
