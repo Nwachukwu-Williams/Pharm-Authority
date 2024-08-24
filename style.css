@@ -99,6 +99,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 nav.page-nav {
@@ -449,4 +450,80 @@ header p {
 
 #refund button {
     padding: 10px 20px;
+}
+
+#blog {
+    background-color: var(--background-color);
+}
+
+#blog .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#blog .container>div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+#blog .post {
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 1;
+    max-width: 295px;
+    height: 100%;
+    overflow: hidden;
+}
+
+#blog img {
+    width: 100%;
+}
+
+#blog p {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 150%;
+    color: black;
+    padding: 10px 10px 20px;
+}
+
+footer .container {
+    display: flex;
+    gap: 20px;
+}
+
+footer .container>div,
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    height: 100%;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+footer .logo {
+    margin-right: 50px;
+}
+
+footer #mail {
+    flex: 1;
+}
+
+footer input,
+footer textarea {
+    padding: 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
 }
