@@ -39,6 +39,9 @@
     #benefits p {
         font-size: 1.2rem;
     }
+    #nav-categories {
+        top: 57px;
+    }
     #nav-categories .container {
         padding: 0px 20px;
     }
