@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #0E133A;
+    --secondary-color: #16AE44;
+    --stroke-color: #E5E5E5;
+    --background-color: #FFF7DF;
+}
+
 @media (max-width: 992px) {
     .container {
         padding: 20px;
@@ -32,16 +39,21 @@
     }
     .page-nav ul {
         position: absolute;
-        background-color: white;
+        background-color: var(--primary-color);
         flex-direction: column;
         width: 100vw;
         padding: 30px;
         gap: 30px;
         top: 60px;
         left: -100vw;
+        transition-duration: 300ms;
     }
     .page-nav ul.active {
-        left: -20px;
+        left: 0px;
+        transition-duration: 300ms;
+    }
+    .page-nav ul a {
+        color: white !important;
     }
     #hambuger {
         display: flex;
@@ -116,16 +128,21 @@
     }
     #nav-categories ul {
         position: absolute;
-        background-color: white;
+        background-color: var(--primary-color);
         flex-direction: column;
         width: 100vw;
         padding: 30px;
         gap: 30px;
-        top: 50px;
         left: -100vw;
+        top: 50px;
+        transition-duration: 300ms;
+    }
+    #nav-categories ul a {
+        color: white;
     }
     #nav-categories ul.active {
-        left: -20px;
+        left: 0px;
+        transition-duration: 300ms;
     }
     #shop>div {
         grid-template-columns: auto;
