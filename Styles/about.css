@@ -1,0 +1,41 @@
+.container {
+    gap: 20px;
+    align-items: start;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.dropdown_2 {
+    position: sticky;
+    top: 130px;
+}
+
+.container:has(.dropdown_2)>div {
+    max-width: 50%;
+}
+
+#privacy_policy,
+#return_policy,
+#shipping_policy {
+    background-color: var(--background-color);
+}
+
+section ul {
+    list-style-type: disc;
+    padding: 10px 20px;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 150%;
+}
+
+#shipping_policy .container>div,
+#FAQ .container>div {
+    max-width: 100%;
+    flex: 1;
+}
+
+#FAQ ul {
+    padding-left: 60px;
+}
