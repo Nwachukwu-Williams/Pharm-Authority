@@ -13,7 +13,7 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-margin-top: 100px;
+    scroll-padding-top: 100px;
 }
 
 .logo {
@@ -346,15 +346,6 @@ footer textarea {
         flex-direction: column;
         width: 100%;
         align-items: center;
-    }
-    h1 {
-        font-size: 3rem;
-        text-align: center;
-        color: white;
-    }
-    h2,
-    p {
-        text-align: center;
     }
     nav.page-nav {
         height: 60px;
