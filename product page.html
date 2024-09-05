@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharm Authority</title>
+    <link rel="stylesheet" href="/Styles/style.css">
+    <link rel="stylesheet" href="/Styles/product page.css">
+    <link rel="stylesheet" href="/Styles/dropdown.css">
+    <link rel="stylesheet" href="/Styles/table.css">
+    <link rel="stylesheet" href="/Styles/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- For the navigation bar -->
+    <nav class="page-nav">
+        <div class="container">
+            <img src="/images/logo.svg" alt="Company logo">
+            <ul id="pag-nav" class="">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/shop/">Shop</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/product-category/bestsellers/">Best Sellers</a>
+                </li>
+                <li>
+                    <a href="#categories">Categories</a>
+                </li>
+                <li>
+                    <a href="#" class="active">About US / Policies</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+            </ul>
+            <div>
+                <div class="account">
+                    <a href="https://pharmauthority.com/my-account/">
+                        <button class="sign-in">Sign In</button>
+                    </a>
+                    <a href="https://pharmauthority.com/cart/">
+                        <button class="cart">                    
+                        <p>Cart</p>
+                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.886993 0C0.448476 0 0.0908203 0.359375 0.0908203 0.8C0.0908203 1.24062 0.448476 1.6 0.886993 1.6H2.6535L4.74345 10C4.92072 10.7125 5.55517 11.2 6.28604 11.2H15.4171C16.1356 11.2 16.7451 10.7219 16.9348 10.025L18.9999 2.4H5.66403L6.06211 4H16.9348L15.4171 9.6H6.28604L4.19608 1.2C4.01881 0.4875 3.38436 0 2.6535 0H0.886993ZM14.4219 11.2C13.1126 11.2 12.0334 12.2844 12.0334 13.6C12.0334 14.9156 13.1126 16 14.4219 16C15.7312 16 16.8104 14.9156 16.8104 13.6C16.8104 12.2844 15.7312 11.2 14.4219 11.2ZM7.25637 11.2C5.94704 11.2 4.86785 12.2844 4.86785 13.6C4.86785 14.9156 5.94704 16 7.25637 16C8.5657 16 9.64489 14.9156 9.64489 13.6C9.64489 12.2844 8.5657 11.2 7.25637 11.2ZM7.25637 12.8C7.70422 12.8 8.05254 13.15 8.05254 13.6C8.05254 14.05 7.70422 14.4 7.25637 14.4C6.80852 14.4 6.4602 14.05 6.4602 13.6C6.4602 13.15 6.80852 12.8 7.25637 12.8ZM14.4219 12.8C14.8698 12.8 15.2181 13.15 15.2181 13.6C15.2181 14.05 14.8698 14.4 14.4219 14.4C13.9741 14.4 13.6257 14.05 13.6257 13.6C13.6257 13.15 13.9741 12.8 14.4219 12.8Z" fill="black"/>
+                        </svg>
+                    </button>
+                    </a>
+                </div>
+                <button id="hambuger" onclick="NavMenu"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0C0.447716 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H23C23.5523 2 24 1.55228 24 1C24 0.447715 23.5523 0 23 0H1ZM1 8C0.447716 8 0 8.44771 0 9C0 9.55229 0.447715 10 1 10H23C23.5523 10 24 9.55229 24 9C24 8.44771 23.5523 8 23 8H1ZM1 16C0.447716 16 0 16.4477 0 17C0 17.5523 0.447715 18 1 18H23C23.5523 18 24 17.5523 24 17C24 16.4477 23.5523 16 23 16H1Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- for categories navigation -->
+    <nav id="nav-categories">
+        <div class="container">
+            <div class="cat-menu">
+                <button id="CatMenu"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 0C0.447716 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H23C23.5523 2 24 1.55228 24 1C24 0.447715 23.5523 0 23 0H1ZM1 8C0.447716 8 0 8.44771 0 9C0 9.55229 0.447715 10 1 10H23C23.5523 10 24 9.55229 24 9C24 8.44771 23.5523 8 23 8H1ZM1 16C0.447716 16 0 16.4477 0 17C0 17.5523 0.447715 18 1 18H23C23.5523 18 24 17.5523 24 17C24 16.4477 23.5523 16 23 16H1Z" fill="black"/>
+                    </svg>
+                </button>
+                <h3>Categories</h3>
+            </div>
+            <ul id="CatList">
+                <li>
+                    <a href="https://pharmauthority.com/product-category/bestsellers/">Best Sellers</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/product-category/anti-aging/">Anti-Aging</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/product-category/erectile-dysfunction/">Erectile Dysfunction</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/product-category/mens-health/">Men's Health</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/product-category/womens-health/">Women's Health</a>
+                </li>
+                <li>
+                    <a href="https://pharmauthority.com/shop/">Others</a>
+                </li>
+            </ul>
+            <div id="search">
+                <input type="search" id="search-value" placeholder="Search product">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.76685 0.5C12.0478 0.5 15.5338 3.98604 15.5338 8.26699C15.5338 10.1268 14.8815 11.8319 13.7863 13.1699L19.4173 18.801C19.7256 19.1093 19.7256 19.6092 19.4173 19.9175C19.109 20.2258 18.6091 20.2258 18.3008 19.9175L12.6698 14.2864C11.3318 15.3817 9.62668 16.034 7.76685 16.034C3.4859 16.034 -0.000143051 12.5479 -0.000143051 8.26699C-0.000143051 3.98604 3.4859 0.5 7.76685 0.5ZM7.76685 2.0534C4.32631 2.0534 1.55326 4.82646 1.55326 8.26699C1.55326 11.7075 4.32631 14.4806 7.76685 14.4806C11.2074 14.4806 13.9804 11.7075 13.9804 8.26699C13.9804 4.82646 11.2074 2.0534 7.76685 2.0534Z" fill="#777777"/>
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+    <!-- item -->
+
+    <section>
+        <div class="container">
+            <div class="item_image">
+                <div>
+                    <img src="/images/acamptas_LE_auto_x2_colored_toned_light_ai_no_background.jpg" alt="product image">
+                    <div class="carosel">
+
+                    </div>
+                </div>
+                <div>
+                    <h3>Acamptas 333 Tablet (Acamprosate 333mg)</h3>
+                    <p>$43 - $180</p>
+                </div>
+            </div>
+
+
+            <div class="description">
+                <div>
+                    <h2>Acamptas 333 Tablet (Acamprosate 333mg)</h2>
+                    <h3>$43 - $180</h3>
+                    <a href="https://pharmauthority.com/product_brand/intas-pharmaceuticals-lth/">Intas Pharmaceuticals Lth</a>
+                </div>
+                <p>Acamptas 333 Tablet (Acamprosate 333mg) helps reduce alcohol cravings in individuals who have completely stopped drinking. This medicine assists in maintaining sobriety but does not address alcohol withdrawal symptoms or damage caused
+                    by alcohol. For best results, use alongside counseling sessions to support alcohol abstinence.
+                </p>
+                <div class="properties">
+                    <p><b>Availability:</b> In stock</p>
+                    <p><b>SKU:</b> N/A</p>
+                    <p><b>Category:</b> Anti alcohol medicine</p>
+                </div>
+                <table class="price">
+                    <tr>
+                        <th>Pack size</th>
+                        <th>Pice Per Unit</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                    <tr>
+                        <td>60 Tablet/s</td>
+                        <td>$0.72</td>
+                        <td>
+                            <button>-</button>
+                            <input type="number" name="quantity" id="quantity" value="1">
+                            <button>+</button>
+                        </td>
+                        <td>$43</td>
+                        <td><button class="button-1">Add to cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>90 Tablet/s</td>
+                        <td>$0.68</td>
+                        <td>
+                            <button>-</button>
+                            <input type="number" name="quantity" id="quantity" value="1">
+                            <button>+</button>
+                        </td>
+                        <td>$61</td>
+                        <td><button class="button-1">Add to cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>180 Tablet/s</td>
+                        <td>$0.64</td>
+                        <td>
+                            <button>-</button>
+                            <input type="number" name="quantity" id="quantity" value="1">
+                            <button>+</button>
+                        </td>
+                        <td>$115</td>
+                        <td><button class="button-1">Add to cart</button></td>
+                    </tr>
+                    <tr>
+                        <td>300 Tablet/s</td>
+                        <td>$0.60</td>
+                        <td>
+                            <button>-</button>
+                            <input type="number" name="quantity" id="quantity" value="1">
+                            <button>+</button>
+                        </td>
+                        <td>$180</td>
+                        <td><button class="button-1">Add to cart</button></td>
+                    </tr>
+                </table>
+                <div class="share">
+                    <p><b>Share:</b></p>
+                    <a href="#">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.0337 1.75C9.56994 1.75 8.125 3.05136 8.125 6.01636V8.625H5V11.75H8.125V19.25H11.25V11.75H13.75L14.375 8.625H11.25V6.54492C11.25 5.42805 11.6142 4.875 12.6624 4.875H14.375V1.87817C14.0787 1.83817 13.2156 1.75 12.0337 1.75Z" fill="#16AE44"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.40161 3C4.48974 3 3.75 3.73852 3.75 4.65039C3.75 5.56227 4.48914 6.31787 5.40039 6.31787C6.31164 6.31787 7.052 5.56227 7.052 4.65039C7.052 3.73914 6.31349 3 5.40161 3ZM13.4595 7.375C12.0726 7.375 11.2791 8.10028 10.8984 8.82153H10.8582V7.56909H8.125V16.75H10.9729V12.2053C10.9729 11.0078 11.0633 9.85059 12.5452 9.85059C14.0058 9.85059 14.0271 11.216 14.0271 12.281V16.75H16.8713H16.875V11.7073C16.875 9.23978 16.3445 7.375 13.4595 7.375ZM3.97705 7.56909V16.75H6.82739V7.56909H3.97705Z" fill="#16AE44"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.0586 3C6.88547 3 3.75 5.11458 3.75 8.53833C3.75 10.7152 4.97405 11.9526 5.71655 11.9526C6.0228 11.9526 6.19995 11.0989 6.19995 10.8577C6.19995 10.5702 5.46631 9.95737 5.46631 8.7605C5.46631 6.27425 7.35897 4.51245 9.80835 4.51245C11.9146 4.51245 13.4729 5.70848 13.4729 7.90723C13.4729 9.5491 12.8137 12.6289 10.6799 12.6289C9.90993 12.6289 9.25171 12.0726 9.25171 11.2751C9.25171 10.1064 10 8.97432 10 7.76807C10 5.72057 7.16431 6.09203 7.16431 8.56641C7.16431 9.08578 7.22906 9.66066 7.46094 10.1338C7.03469 11.9707 6.25 14.8984 6.25 16.7915C6.25 17.3759 6.33354 17.9509 6.38916 18.5359C6.49416 18.6534 6.44216 18.641 6.60278 18.5823C8.16153 16.4485 8.01692 15.8401 8.72192 13.0476C9.10255 13.7714 10.0861 14.1609 10.8655 14.1609C14.1499 14.1609 15.625 10.9601 15.625 8.07446C15.625 5.00384 12.9717 3 10.0586 3Z" fill="#16AE44"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.2938 2.99745C16.0838 3.00722 15.8861 3.06825 15.7103 3.13661H15.7079C15.5296 3.20741 14.6825 3.56386 13.3959 4.10341C12.1092 4.6454 10.4393 5.34853 8.7816 6.04677C5.47105 7.44081 2.21665 8.81288 2.21665 8.81288L2.25572 8.79823C2.25572 8.79823 2.03111 8.87148 1.79673 9.03261C1.6771 9.11073 1.54527 9.21816 1.43052 9.38661C1.31578 9.55507 1.223 9.81386 1.25718 10.08C1.31333 10.5316 1.6063 10.8026 1.81626 10.9516C2.02867 11.1029 2.2313 11.1737 2.2313 11.1737H2.23619L5.28794 12.2016C5.42466 12.641 6.21812 15.2484 6.40855 15.849C6.52085 16.2079 6.63072 16.4325 6.76744 16.6034C6.83335 16.6913 6.91148 16.7645 7.00425 16.8231C7.04087 16.8451 7.07994 16.8622 7.119 16.8768C7.13121 16.8842 7.14341 16.8866 7.15806 16.8891L7.12632 16.8817C7.13609 16.8842 7.14341 16.8915 7.15074 16.8939C7.17515 16.9013 7.19224 16.9037 7.22398 16.9086C7.70738 17.0551 8.09556 16.7548 8.09556 16.7548L8.11753 16.7377L9.91929 15.0971L12.9393 17.414L13.0077 17.4433C13.6376 17.7191 14.2748 17.5653 14.6117 17.2943C14.951 17.0209 15.0829 16.6718 15.0829 16.6718L15.1048 16.6156L17.4388 4.66005C17.5047 4.36464 17.5218 4.08876 17.4486 3.82021C17.3753 3.55165 17.1874 3.30019 16.9603 3.16591C16.7308 3.02919 16.5038 2.98769 16.2938 2.99745ZM16.2303 4.27919C16.2279 4.31825 16.2352 4.31337 16.2181 4.38905V4.39638L13.9061 16.2274C13.8963 16.2445 13.8793 16.2811 13.8329 16.3178C13.784 16.3568 13.745 16.3812 13.5423 16.3007L9.84849 13.4686L7.61705 15.5023L8.0858 12.5092C8.0858 12.5092 13.8719 7.11611 14.121 6.88417C14.37 6.65224 14.287 6.60341 14.287 6.60341C14.3041 6.32021 13.911 6.5204 13.911 6.5204L6.30113 11.2348L6.29869 11.2226L2.65123 9.99452V9.99208C2.64878 9.99208 2.6439 9.98964 2.64146 9.98964C2.6439 9.98964 2.66099 9.98232 2.66099 9.98232L2.68052 9.97255L2.70005 9.96523C2.70005 9.96523 5.95689 8.59316 9.26744 7.19911C10.9252 6.50087 12.5951 5.79775 13.8793 5.25575C15.1634 4.7162 16.1131 4.32069 16.1669 4.29872C16.2181 4.27919 16.1937 4.27919 16.2303 4.27919Z" fill="#16AE44"/>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2.36816 2.8999L8.23301 11.4499L2.49238 18.0999H3.76426L8.79473 12.2687L12.7947 18.0999H17.6002L11.4729 9.16787L16.8799 2.8999H15.6119L10.9104 8.34678L7.17363 2.8999H2.36816ZM3.88691 3.6999H6.75254L16.0814 17.2999H13.2158L3.88691 3.6999Z" fill="#16AE44"/>
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <h3>Description</h3>
+                    <h2>Acamptas 333 Tablet (Acamprosate 333mg)</h2>
+                    <p>Acamptas 333 Tablet (Acamprosate 333mg) is a medication designed to help individuals who have completely stopped drinking alcohol curb their cravings. However, it is not intended to treat the symptoms of alcohol withdrawal or to shield
+                        against the adverse effects of chronic alcohol abuse. For best results, the Acamptas 333 Tablet should be taken with food, and it’s most effective when combined with counseling and social support to ensure lasting sobriety and
+                        recovery.
+                    </p>
+                </div>
+                <div>
+                    <h3>Usage</h3>
+                    <p>Acamptas 333 Tablet (Acamprosate 333mg) is utilized for several purposes related to alcohol dependence and recovery, including:</p>
+                    <ul>
+                        <li>Treatment of alcohol addiction</li>
+                        <li>Support in maintaining abstinence from alcohol</li>
+                        <li>Reduction of alcohol cravings</li>
+                        <li>Improvement of long-term recovery success</li>
+                        <li>Assistance in relapse prevention</li>
+                    </ul>
+                    <p><b>Treatment of alcohol addiction:</b> Acamptas 333 Tablet (Acamprosate 333mg) plays a critical role in helping individuals overcome alcohol addiction when combined with other therapeutic interventions.</p>
+                    <p><b>Reduction of alcohol cravings:</b> Acamptas 333 Tablet (Acamprosate 333mg) helps reduce the urge to drink, breaking the cycle of addiction more effectively.</p>
+                    <p><b>Improvement of long-term recovery success:</b> By assisting users in avoiding alcohol, the long-term success rate of recovery is significantly enhanced.</p>
+                    <p><b>Assistance in relapse prevention:</b> The medication’s ability to stabilize chemical imbalances in the brain aids in preventing relapse by reducing cravings and other triggers.</p>
+                </div>
+                <div>
+                    <h3>Safety and Precautions</h3>
+                    <ul>
+                        <li>Always take the medication with food.</li>
+                        <li>Do not skip any doses; complete the full treatment as prescribed.</li>
+                        <li>Avoid suddenly stopping the medication without consulting your doctor.</li>
+                        <li>Drink plenty of fluids to prevent dehydration caused by diarrhea.</li>
+                        <li>Notify your doctor if you experience unusual changes in mood or behavior.</li>
+                        <li>Inform your doctor about any history of kidney or liver disease.</li>
+                        <li>Consult your doctor regarding use during pregnancy and breastfeeding.</li>
+                        <li>Avoid alcohol intake while on this medication.</li>
+                        <li>Regular counseling is recommended for better results.</li>
+                        <li>Discuss any other medications you are taking with your healthcare provider to avoid drug interactions.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Side Effects</h3>
+                    <p>Most side effects do not require any medical attention and disappear as your body adjusts to the medicine. Consult your doctor if they persist or if you’re worried about them.</p>
+                    <ul>
+                        <li>Diarrhea</li>
+                        <li>Abdominal pain</li>
+                        <li>Nausea</li>
+                        <li>Vomiting</li>
+                        <li>Decreased libido</li>
+                        <li>Itching</li>
+                        <li>Flatulence</li>
+                        <li>Impotence</li>
+                        <li>Depression</li>
+                        <li>Suicidal thoughts or behavior</li>
+                        <li>Unusual changes in mood</li>
+                        <li>Dizziness</li>
+                        <li>Headache</li>
+                        <li>Insomnia</li>
+                        <li>Anxiety</li>
+                    </ul>
+                    <p>Discuss these options with your healthcare provider to understand which treatment may be best suited for your condition.</p>
+                </div>
+                <div>
+                    <h3>Frequently Asked Questions (FAQs)</h3>
+                    <div class="dropdown_2">
+                        <div class="wow">
+                            <div>
+                                <h3>How do you pronounce Acamprosate?</h3>
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <p>Acamprosate is pronounced a-KAM’-proe-sate.</p>
+                        </div>
+                        <div class="wow">
+                            <div>
+                                <h3>Acamprosate vs. Naltrexone: How do they compare?</h3>
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <p>Acamprosate and Naltrexone are both used to treat alcohol use disorder but work differently:</p>
+                            <ul>
+                                <li><b>Acamprosate:</b> Thought to help restore the balance of neurotransmitters in the brain altered by alcohol use, thereby reducing cravings.</li>
+                                <li><b>Naltrexone:</b> Works by blocking the euphoric and sedative effects of alcohol, making drinking less enjoyable.</li>
+                            </ul>
+                            <p>Some studies suggest that Acamprosate may be more effective in maintaining abstinence, while Naltrexone may be better at reducing heavy drinking and cravings.</p>
+                        </div>
+                        <div class="wow">
+                            <div>
+                                <h3>Does Acamprosate make you sick if you drink alcohol?</h3>
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <p>No, Acamprosate does not make you feel sick if you drink alcohol, unlike some other medications used in treating AUD such as Disulfiram (Antabuse).</p>
+                        </div>
+                        <div class="wow">
+                            <div>
+                                <h3>How long does it take for Acamprosate to work?</h3>
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <p>Acamprosate usually takes several days to a week to start working fully. It reaches a consistent level in the body about five days after you begin taking it as prescribed.</p>
+                        </div>
+                        <div class="wow">
+                            <div>
+                                <h3>Does Acamprosate cause weight gain?</h3>
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <p>Weight gain has been frequently reported as a side effect of Acamprosate by people taking it to manage alcohol cravings associated with AUD.</p>
+                        </div>
+                        <div class="wow">
+                            <div>
+                                <h3>How does Acamprosate work?</h3>
+                                <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <p>Although it is not clear exactly how Acamprosate helps prevent cravings and the urge to drink alcohol, it is thought to restore the balance between excitatory and inhibitory neurotransmitters in the brain. Research suggests
+                                it primarily works by decreasing the excessive excitation that accompanies alcohol dependence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3>Comparative Efficacy: Acamprosate vs. Naltrexone</h3>
+                    <table>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Acamprosate</th>
+                            <th>Naltrexone</th>
+                        </tr>
+                        <tr>
+                            <td>Primary use</td>
+                            <td>Maintain Abstinence</td>
+                            <td>Reduce heavy drinking and cravings</td>
+                        </tr>
+                        <tr>
+                            <td>Mechanism</td>
+                            <td>Restores neurotransmitter balance</td>
+                            <td>Blocks euphoric and sedative effects of alcohol</td>
+                        </tr>
+                    </table>
+                    <p>This comparison highlights that neither drug is inherently superior but may be more effective depending on individual patient needs and treatment goals.</p>
+                </div>
+                <div>
+                    <h3>Reports and Studies</h3>
+                    <p>Numerous studies have investigated the efficacy and safety of Acamprosate:</p>
+                    <ul>
+                        <li><b>Meta-Analysis:</b> A meta-analysis using data from 64 trials indicated differences in efficacy between Acamprosate and Naltrexone, with nuanced findings about their respective benefits.</li>
+                        <li><b>Two Small Studies:</b> Further research suggested that Naltrexone could be more effective than Acamprosate in specific areas.</li>
+                    </ul>
+                    <p>Overall, both medications are valuable tools in treating alcohol use disorders, each with its properties and areas of effectiveness.</p>
+                </div>
+                <div>
+                    <h3>Consultation and Professional Advice</h3>
+                    <p>Always consult your healthcare provider to ensure that the information and recommendations apply to your unique circumstances. Personalized medical advice is crucial in effectively managing alcohol dependence and utilizing medications
+                        like Acamprosate appropriately.<br><br>For more detailed information, refer to the National Library of Medicine, the FDA, and other trusted medical resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><img src="/images/logo.svg" alt="Company logo"></a>
+            </div>
+            <div>
+                <ul class="wow ">
+                    <li>
+                        <h3>Erectile Dysfunction</h3>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/dapoxetine/">Dapoxetine</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-cialis-tadalafil/">Generic Cialis (Tadalafil)</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-levitra-vardenafil/">Generic Levitra (Vardenafil)</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-satendra-avanafil/">Generic Satendra (Avanafil)</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-viagra-sildenafil-citrate/">Generic Viagra (Sildenafil Citrate)</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/sildenafil-dapoxetine/">Sildenafil + Dapoxetine</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul class="wow ">
+                    <li>
+                        <h3>Quick Links</h3>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/about-us/">About Us</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/contact-us/">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.trackdesk.com/sign-up">Become An Affiliate</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/my-account/">My Account</a>
+                    </li>
+                    <li>
+                        <a href="/about us.html#shipping_policy">Shipping Policy</a>
+                    </li>
+                    <li>
+                        <a href="/about us.html#privacy_policy">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="/about us.html#return_policy">Refund And Return Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class="wow ">
+                    <li>
+                        <h3>Customer Service</h3>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/my-account/">My Profile</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/order-tracking/">Order Tracking</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/my-account/orders">My Orders</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/wishlist/">My Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="https://pharmauthority.com/faqs/">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <div id="mail" class="wow ">
+                <h3>Send Us An Email</h3>
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+                <button class="button-1">Send</button>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/script.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+
+</html>

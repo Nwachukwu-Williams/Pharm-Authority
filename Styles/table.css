@@ -1,0 +1,79 @@
+table {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid var(--stroke-color);
+}
+
+table tr:first-of-type {
+    background-color: var(--primary-color);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--stroke-color);
+}
+
+th {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding: 10px 0px;
+}
+
+td {
+    text-align: center;
+    padding: 10px 0px;
+    /* 90 Tablet/s */
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+}
+
+td:has(button) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+td:has(input) button {
+    padding: 3px;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+td input {
+    background-color: transparent;
+    border: none;
+    width: 70px;
+    text-align: center;
+}
+
+td .button-1 {
+    padding: 10px 20px;
+}
+
+@media (max-width: 992px) {
+    td .button-1 {
+        padding: 5px;
+    }
+    td input {
+        width: 50px;
+    }
+    th {
+        font-size: 1rem;
+        padding: 10px 0px;
+    }
+    td:has(input) button {
+        padding: 0px;
+        font-size: 1rem;
+    }
+}
