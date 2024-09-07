@@ -1,0 +1,340 @@
+.hero .container {
+    padding: 100px 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero img {
+    max-width: 625px;
+    height: 100%;
+    border-radius: 20px;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.hero .container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hero p {
+    font-size: 2rem;
+    line-height: 150%;
+    max-width: 461px;
+}
+
+.hero button {
+    width: fit-content;
+    padding: 16px 32px;
+    border-radius: 20px;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.hero-benefits {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+.hero .container>div>div:last-child div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.hero .container>div>div:last-child p {
+    font-size: 16px !important;
+}
+
+.hero svg {
+    height: 28px;
+    width: auto;
+}
+
+.intro .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 20px;
+}
+
+.intro p {
+    text-align: center;
+    max-width: 570px;
+}
+
+.carousel .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 20px;
+}
+
+.benefits {
+    position: relative;
+}
+
+.benefits .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    gap: 20px;
+}
+
+.benefits .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+    background: white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    order: 1;
+    flex: 1;
+    z-index: 1;
+}
+
+.benefits .back-color {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    background-color: var(--background-color);
+    z-index: -1;
+    width: 100%;
+}
+
+.benefits p {
+    font-family: 'Jost', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 35px;
+}
+
+.best-seller,
+.ed {
+    background-color: var(--background-color);
+}
+
+.container:has(.products) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.products .item {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.products img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.products .item div {
+    padding: 10px 10px 20px;
+    text-align: center;
+}
+
+.about .container,
+.refund .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 100px;
+}
+
+.about .container div,
+.refund .container>div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 521px;
+}
+
+.refund {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.refund h2 {
+    color: white;
+}
+
+.refund button {
+    padding: 10px 20px;
+}
+
+@media (max-width: 1366px) {
+    .hero .container {
+        padding: 70px 50px;
+    }
+    .hero img {
+        max-width: 500px;
+    }
+    .hero p {
+        font-size: 1.5rem;
+        max-width: 363px;
+    }
+    .benefits .container {
+        padding-bottom: 20px;
+    }
+    .benefits .container {
+        gap: 0.5rem;
+        padding: 1.25rem 3.125rem;
+    }
+    .benefits .container div {
+        padding: 20px;
+    }
+    .benefits p {
+        font-size: 1.2rem;
+    }
+    .products {
+        gap: 10px;
+    }
+    .about .container,
+    .refund .container {
+        padding: 3.125rem 6.25rem;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        color: #FFFFFF;
+    }
+    .hero {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), url(/images/national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg) lightgray 50% / cover no-repeat;
+    }
+    .hero .container {
+        padding: 9.375rem 1.25rem;
+        align-items: center;
+        gap: 0px;
+    }
+    .hero img {
+        display: none;
+    }
+    .hero .container>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        width: 100%;
+    }
+    .hero .container>div>div:first-of-type {
+        align-items: center;
+        max-width: 300px;
+    }
+    .hero-benefits {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        width: 100%;
+        gap: 0px;
+    }
+    .hero-benefits div {
+        background-color: transparent;
+    }
+    .hero-benefits p {
+        font-weight: 700;
+        font-size: 10px;
+        color: #FFFFFF;
+    }
+    .hero p {
+        font-size: 1rem;
+        color: #FFFFFF;
+    }
+    .intro .container {
+        padding: 20px;
+    }
+    .carousel .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        padding: 3.125rem 1.25rem;
+        gap: 1.25rem;
+    }
+    .benefits svg {
+        width: 100%;
+        height: 20px;
+    }
+    .benefits p {
+        font-size: .8rem !important;
+        line-height: 100%;
+    }
+    .benefits .container {
+        display: flex;
+        width: fit-content;
+        max-width: 100%;
+        margin: 0% 20px;
+        padding: 1.25rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+        border-radius: 0.625rem;
+        background: #FFF;
+        box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.10);
+    }
+    .benefits .container div {
+        padding: 0.62rem 0;
+        box-shadow: none;
+    }
+    .benefits p {
+        font-size: 1rem;
+    }
+    .container:has(.products) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 3.125rem 1.25rem;
+    }
+    .products {
+        flex-direction: column;
+    }
+    .about .container {
+        flex-direction: column-reverse;
+        padding: 50px 20px;
+    }
+    .about .container div,
+    .refund .container>div {
+        align-items: center;
+        max-width: 100%;
+    }
+    .refund .container {
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+}

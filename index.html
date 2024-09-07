@@ -3,349 +3,254 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pharm Authority</title>
-    <link rel="stylesheet" href="/Styles/style.css">
-    <link rel="stylesheet" href="/Styles/home.css">
-    <link rel="stylesheet" href="/Styles/dropdown.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/dropdown.css">
     <link rel="stylesheet" href="/Styles/animation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharm Authority</title>
 </head>
 
 <body>
-    <!-- For the navigation bar -->
-    <nav class="page-nav">
-        <div class="container">
-            <img src="/images/logo.svg" alt="Company logo">
-            <ul id="pag-nav" class="">
-                <li>
-                    <a href="#" class="active">Home</a>
-                </li>
-                <li>
-                    <a href="https://pharmauthority.com/shop/">Shop</a>
-                </li>
-                <li>
-                    <a href="https://pharmauthority.com/product-category/bestsellers/">Best Sellers</a>
-                </li>
-                <li>
-                    <a href="#categories">Categories</a>
-                </li>
-                <li>
-                    <a href="about us.html">About Us / Policies</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact Us</a>
-                </li>
-            </ul>
-            <div>
-                <div class="account">
-                    <a href="https://pharmauthority.com/my-account/">
-                        <button class="sign-in">Sign In</button>
-                    </a>
-                    <a href="https://pharmauthority.com/cart/">
-                        <button class="cart">                    
-                        <p>Cart</p>
-                        <svg width="19" height="16" viewBox="0 0 19 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0.886993 0C0.448476 0 0.0908203 0.359375 0.0908203 0.8C0.0908203 1.24062 0.448476 1.6 0.886993 1.6H2.6535L4.74345 10C4.92072 10.7125 5.55517 11.2 6.28604 11.2H15.4171C16.1356 11.2 16.7451 10.7219 16.9348 10.025L18.9999 2.4H5.66403L6.06211 4H16.9348L15.4171 9.6H6.28604L4.19608 1.2C4.01881 0.4875 3.38436 0 2.6535 0H0.886993ZM14.4219 11.2C13.1126 11.2 12.0334 12.2844 12.0334 13.6C12.0334 14.9156 13.1126 16 14.4219 16C15.7312 16 16.8104 14.9156 16.8104 13.6C16.8104 12.2844 15.7312 11.2 14.4219 11.2ZM7.25637 11.2C5.94704 11.2 4.86785 12.2844 4.86785 13.6C4.86785 14.9156 5.94704 16 7.25637 16C8.5657 16 9.64489 14.9156 9.64489 13.6C9.64489 12.2844 8.5657 11.2 7.25637 11.2ZM7.25637 12.8C7.70422 12.8 8.05254 13.15 8.05254 13.6C8.05254 14.05 7.70422 14.4 7.25637 14.4C6.80852 14.4 6.4602 14.05 6.4602 13.6C6.4602 13.15 6.80852 12.8 7.25637 12.8ZM14.4219 12.8C14.8698 12.8 15.2181 13.15 15.2181 13.6C15.2181 14.05 14.8698 14.4 14.4219 14.4C13.9741 14.4 13.6257 14.05 13.6257 13.6C13.6257 13.15 13.9741 12.8 14.4219 12.8Z" fill="black"/>
-                        </svg>
-                    </button>
-                    </a>
-                </div>
-                <button id="hambuger" onclick="NavMenu"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1 0C0.447716 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H23C23.5523 2 24 1.55228 24 1C24 0.447715 23.5523 0 23 0H1ZM1 8C0.447716 8 0 8.44771 0 9C0 9.55229 0.447715 10 1 10H23C23.5523 10 24 9.55229 24 9C24 8.44771 23.5523 8 23 8H1ZM1 16C0.447716 16 0 16.4477 0 17C0 17.5523 0.447715 18 1 18H23C23.5523 18 24 17.5523 24 17C24 16.4477 23.5523 16 23 16H1Z" fill="black"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- for the hero section -->
-    <header class="hero">
-        <div class="container">
-            <div>
-                <h1 class="wow ">Pharm Authority</h1>
-                <p class="wow ">Your trusted source for generic medicines, just a click away</p>
-                <div class="buttons wow ">
-                    <a href="https://pharmauthority.com/shop/"><button class="button-1">Our Products</button></a>
-                    <a href="https://pharmauthority.com/product-category/bestsellers/"><button class="button-2">Best Sellers</button></a>
-                </div>
-            </div>
-            <img src="/images/national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg" alt="A pharmacist">
-        </div>
+    <header>
+        <img src="/images/logo.svg" alt="company logo">
     </header>
+    <section class="banner">
+        <div class="container">
+            <div class="code">
+                <img src="/images/logo white.svg" alt="company logo">
+                <div>
+                    <p><span>Use Code:</span><br>PHARMA24</p>
+                    <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.75 3.125V6.25H3.625V6.875V16.875H14.25V13.75H17.375V3.125H6.75ZM8 4.375H16.125V12.5H14.25V6.25H8V4.375ZM4.875 7.5H13V15.625H4.875V7.5Z" fill="#16AE44"/>
+                        <path d="M4.875 7.5H13V15.625H4.875V7.5Z" fill="#16AE44"/>
+                    </svg>
+                </div>
+                <a href="#"><button class="btn-1">Shop Now</button></a>
+            </div>
+            <div class="subscribe">
+                <img src="/images/logo.svg" alt="company logo">
+                <div>
+                    <p>Subscribe and save</p>
+                </div>
+                <a href="#"><button class="btn-1">Subscribe</button></a>
+            </div>
+        </div>
+    </section>
 
-    <section id="benefits">
+
+    <!-- Hero section -->
+    <section class="hero">
         <div class="container">
             <div>
                 <div>
-                    <svg width="65" height="52" viewBox="0 0 65 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0V45.5H6.83854C7.80339 49.224 11.1549 52 15.1667 52C19.1784 52 22.5299 49.224 23.4948 45.5H41.5052C42.4701 49.224 45.8216 52 49.8333 52C53.8451 52 57.1966 49.224 58.1615 45.5H65V22.9531L64.3906 22.276L51.3906 9.27604L50.7135 8.66667H39V0H0ZM4.33333 4.33333H34.6667V41.1667H23.4948C22.5299 37.4427 19.1784 34.6667 15.1667 34.6667C11.1549 34.6667 7.80339 37.4427 6.83854 41.1667H4.33333V4.33333ZM39 13H48.8854L60.6667 24.7812V41.1667H58.1615C57.1966 37.4427 53.8451 34.6667 49.8333 34.6667C45.8216 34.6667 42.4701 37.4427 41.5052 41.1667H39V13ZM15.1667 39C17.5872 39 19.5 40.9128 19.5 43.3333C19.5 45.7539 17.5872 47.6667 15.1667 47.6667C12.7461 47.6667 10.8333 45.7539 10.8333 43.3333C10.8333 40.9128 12.7461 39 15.1667 39ZM49.8333 39C52.2539 39 54.1667 40.9128 54.1667 43.3333C54.1667 45.7539 52.2539 47.6667 49.8333 47.6667C47.4128 47.6667 45.5 45.7539 45.5 43.3333C45.5 40.9128 47.4128 39 49.8333 39Z" fill="#16AE44"/>
-                </svg>
-                    <p>Free Shipping</p>
+                    <h1>Your <span>Health</span> Is our <span>priority</span></h1>
+                    <p>Your trusted source for generic medicines, just a click away!!!</p>
                 </div>
-                <div>
-                    <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24.4998 0C19.5615 0 16.235 1.91623 13.2514 3.51169C10.2679 5.10714 7.55864 6.48312 2.55174 6.48312H0.356934V8.64416C0.356934 25.3247 6.084 36.1805 11.8797 42.7481C17.6753 49.3156 23.6767 51.7299 23.6767 51.7299L24.4998 52L25.3228 51.7299C25.3228 51.7299 31.3243 49.3662 37.1199 42.8156C42.9156 36.2649 48.6427 25.3838 48.6427 8.64416V6.48312H46.4479C41.4667 6.48312 38.7317 5.10714 35.7482 3.51169C32.7646 1.91623 29.4381 0 24.4998 0ZM24.4998 4.32208C28.3407 4.32208 30.5441 5.6474 33.622 7.29351C36.2197 8.68636 39.6662 10.0201 44.1159 10.4675C43.6958 25.0883 38.7832 34.3825 33.8277 39.9792C29.3352 45.0526 25.5629 46.7409 24.4998 47.2052C23.4281 46.7325 19.6644 45.0019 15.1719 39.9117C10.2164 34.298 5.30382 25.0208 4.88372 10.4675C9.35049 10.0201 12.7799 8.68636 15.3776 7.29351C18.4555 5.6474 20.6589 4.32208 24.4998 4.32208ZM36.0911 15.7351L22.305 29.3091L15.1033 22.2182L11.9483 25.3247L20.7275 33.9688L22.305 35.4545L23.8825 33.9688L39.2461 18.8416L36.0911 15.7351Z" fill="#16AE44"/>
-                </svg>
-                    <p>Secured Payment</p>
+                <button class="btn-1">Claim Special Rewards Now!</button>
+                <div class="hero-benefits">
+                    <div>
+                        <svg width="65" height="52" viewBox="0 0 65 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V45.5H6.83854C7.80339 49.224 11.1549 52 15.1667 52C19.1784 52 22.5299 49.224 23.4948 45.5H41.5052C42.4701 49.224 45.8216 52 49.8333 52C53.8451 52 57.1966 49.224 58.1615 45.5H65V22.9531L64.3906 22.276L51.3906 9.27604L50.7135 8.66667H39V0H0ZM4.33333 4.33333H34.6667V41.1667H23.4948C22.5299 37.4427 19.1784 34.6667 15.1667 34.6667C11.1549 34.6667 7.80339 37.4427 6.83854 41.1667H4.33333V4.33333ZM39 13H48.8854L60.6667 24.7812V41.1667H58.1615C57.1966 37.4427 53.8451 34.6667 49.8333 34.6667C45.8216 34.6667 42.4701 37.4427 41.5052 41.1667H39V13ZM15.1667 39C17.5872 39 19.5 40.9128 19.5 43.3333C19.5 45.7539 17.5872 47.6667 15.1667 47.6667C12.7461 47.6667 10.8333 45.7539 10.8333 43.3333C10.8333 40.9128 12.7461 39 15.1667 39ZM49.8333 39C52.2539 39 54.1667 40.9128 54.1667 43.3333C54.1667 45.7539 52.2539 47.6667 49.8333 47.6667C47.4128 47.6667 45.5 45.7539 45.5 43.3333C45.5 40.9128 47.4128 39 49.8333 39Z" fill="#16AE44"/>
+                    </svg>
+                        <p>Free Shipping</p>
+                    </div>
+                    <div>
+                        <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.4998 0C19.5615 0 16.235 1.91623 13.2514 3.51169C10.2679 5.10714 7.55864 6.48312 2.55174 6.48312H0.356934V8.64416C0.356934 25.3247 6.084 36.1805 11.8797 42.7481C17.6753 49.3156 23.6767 51.7299 23.6767 51.7299L24.4998 52L25.3228 51.7299C25.3228 51.7299 31.3243 49.3662 37.1199 42.8156C42.9156 36.2649 48.6427 25.3838 48.6427 8.64416V6.48312H46.4479C41.4667 6.48312 38.7317 5.10714 35.7482 3.51169C32.7646 1.91623 29.4381 0 24.4998 0ZM24.4998 4.32208C28.3407 4.32208 30.5441 5.6474 33.622 7.29351C36.2197 8.68636 39.6662 10.0201 44.1159 10.4675C43.6958 25.0883 38.7832 34.3825 33.8277 39.9792C29.3352 45.0526 25.5629 46.7409 24.4998 47.2052C23.4281 46.7325 19.6644 45.0019 15.1719 39.9117C10.2164 34.298 5.30382 25.0208 4.88372 10.4675C9.35049 10.0201 12.7799 8.68636 15.3776 7.29351C18.4555 5.6474 20.6589 4.32208 24.4998 4.32208ZM36.0911 15.7351L22.305 29.3091L15.1033 22.2182L11.9483 25.3247L20.7275 33.9688L22.305 35.4545L23.8825 33.9688L39.2461 18.8416L36.0911 15.7351Z" fill="#16AE44"/>
+                    </svg>
+                        <p>Secured Payment</p>
+                    </div>
+                    <div>
+                        <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.5 0C12.1628 0 0.5 11.6628 0.5 26C0.5 32.6523 3.00521 38.7292 7.13542 43.3333H2.66667V47.6667H15.6667V34.6667H11.3333V41.4375C7.33854 37.5104 4.83333 32.0514 4.83333 26C4.83333 14.0072 14.5072 4.33333 26.5 4.33333V0ZM31.375 0.473958L30.1563 4.67188C31.5866 4.91732 33.0085 5.29818 34.3542 5.82292L35.5052 1.625C34.151 1.12565 32.7969 0.744792 31.375 0.473958ZM37.3333 4.33333V17.3333H41.6667V10.5625C45.6699 14.4811 48.1667 19.9316 48.1667 26C48.1667 37.9928 38.4928 47.6667 26.5 47.6667V52C40.8372 52 52.5 40.3372 52.5 26C52.5 19.3307 49.944 13.2624 45.7969 8.66667H50.3333V4.33333H37.3333ZM18.6458 46.1771L17.4948 50.375C18.849 50.8744 20.2031 51.2552 21.625 51.526L22.8438 47.3281C21.4134 47.0827 19.9915 46.7018 18.6458 46.1771Z" fill="#16AE44"/>
+                    </svg>
+                        <p>30 Days Return</p>
+                    </div>
+                    <div>
+                        <svg width="45" height="52" viewBox="0 0 45 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5001 0C10.2493 0 0.214355 9.90625 0.214355 22V34C0.214355 36.5859 1.92377 38.7891 4.2663 39.625V40C4.2663 45.4922 8.83266 50 14.3962 50H16.992C17.6963 51.1953 18.9784 52 20.4741 52H24.5261C26.7578 52 28.578 50.2031 28.578 48C28.578 45.7969 26.7578 44 24.5261 44H20.4741C18.9784 44 17.6963 44.8047 16.992 46H14.3962C11.0407 46 8.31825 43.3125 8.31825 40H12.3702V22H4.2663C4.2663 12.0938 12.4652 4 22.5001 4C32.535 4 40.7338 12.0938 40.7338 22H32.6299V40H38.7079C42.0396 40 44.7858 37.2891 44.7858 34V22C44.7858 9.90625 34.7509 0 22.5001 0ZM4.2663 26H8.31825V36H6.29228C5.1685 36 4.2663 35.1094 4.2663 34V26ZM36.6819 26H40.7338V34C40.7338 35.1094 39.8317 36 38.7079 36H36.6819V26Z" fill="#16AE44"/>
+                    </svg>
+                        <p>24/7 Support</p>
+                    </div>
                 </div>
-                <div>
-                    <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M26.5 0C12.1628 0 0.5 11.6628 0.5 26C0.5 32.6523 3.00521 38.7292 7.13542 43.3333H2.66667V47.6667H15.6667V34.6667H11.3333V41.4375C7.33854 37.5104 4.83333 32.0514 4.83333 26C4.83333 14.0072 14.5072 4.33333 26.5 4.33333V0ZM31.375 0.473958L30.1563 4.67188C31.5866 4.91732 33.0085 5.29818 34.3542 5.82292L35.5052 1.625C34.151 1.12565 32.7969 0.744792 31.375 0.473958ZM37.3333 4.33333V17.3333H41.6667V10.5625C45.6699 14.4811 48.1667 19.9316 48.1667 26C48.1667 37.9928 38.4928 47.6667 26.5 47.6667V52C40.8372 52 52.5 40.3372 52.5 26C52.5 19.3307 49.944 13.2624 45.7969 8.66667H50.3333V4.33333H37.3333ZM18.6458 46.1771L17.4948 50.375C18.849 50.8744 20.2031 51.2552 21.625 51.526L22.8438 47.3281C21.4134 47.0827 19.9915 46.7018 18.6458 46.1771Z" fill="#16AE44"/>
+            </div>
+            <img src="/images/national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg" alt="Hero section image">
+        </div>
+    </section>
+
+
+    <!-- promo images -->
+    <section class="promo">
+        <div class="container">
+            <a href="#"><img src="/images/your-trusted-source-(edited).png" alt="banner image"></a>
+            <a href="#"><img class="big" src="/images/buy-100-get-10-free(edited).png.jpg" alt="banner image"></a>
+            <a href="#"><img src="/images/code-(edited).png" alt="banner image"></a>
+        </div>
+    </section>
+
+    <!-- Brief intro -->
+    <section class="intro">
+        <div class="container">
+            <h2 class="wow ">Pharm Authority</h2>
+            <p class="wow ">At Pharm Authority, we are proud to be an international healthcare exporter, distributor, and drop shipper. Our primary mission is to identify and introduce meaningful products that address unmet medical needs.
+                <br><br>We place a strong emphasis on quality and service, ensuring that our customers receive safe and effective healthcare products.</p>
+            <div class="btn wow ">
+                <a href="https://pharmauthority.com/shop/"><button class="btn-1">Shop Now</button></a>
+                <a href="about us.html"><button class="btn-2">About Us</button></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- image carousel -->
+    <section class="carousel">
+        <div class="container">
+            <img src="/images/pngwing.com_-150x150.png" alt="Abbott Pharmacy Logo">
+            <img src="/images/sunpharma-150x150.png" alt="sunpharma Pharmacy Logo">
+            <img src="/images/cipla-150x150.png" alt="Ciplahealth Pharmacy Logo">
+            <img src="/images/enlarged_nalom_logo-150x150.png" alt="Naiom Pharmacy Logo">
+            <img src="/images/intas-150x150.png" alt="intas Pharmacy Logo">
+            <img src="/images/centuriom-150x150.png" alt="centurion Pharmacy Logo">
+        </div>
+    </section>
+
+    <!-- benefits section -->
+    <section class="benefits">
+        <div class="container">
+            <div>
+                <svg width="65" height="52" viewBox="0 0 65 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0V45.5H6.83854C7.80339 49.224 11.1549 52 15.1667 52C19.1784 52 22.5299 49.224 23.4948 45.5H41.5052C42.4701 49.224 45.8216 52 49.8333 52C53.8451 52 57.1966 49.224 58.1615 45.5H65V22.9531L64.3906 22.276L51.3906 9.27604L50.7135 8.66667H39V0H0ZM4.33333 4.33333H34.6667V41.1667H23.4948C22.5299 37.4427 19.1784 34.6667 15.1667 34.6667C11.1549 34.6667 7.80339 37.4427 6.83854 41.1667H4.33333V4.33333ZM39 13H48.8854L60.6667 24.7812V41.1667H58.1615C57.1966 37.4427 53.8451 34.6667 49.8333 34.6667C45.8216 34.6667 42.4701 37.4427 41.5052 41.1667H39V13ZM15.1667 39C17.5872 39 19.5 40.9128 19.5 43.3333C19.5 45.7539 17.5872 47.6667 15.1667 47.6667C12.7461 47.6667 10.8333 45.7539 10.8333 43.3333C10.8333 40.9128 12.7461 39 15.1667 39ZM49.8333 39C52.2539 39 54.1667 40.9128 54.1667 43.3333C54.1667 45.7539 52.2539 47.6667 49.8333 47.6667C47.4128 47.6667 45.5 45.7539 45.5 43.3333C45.5 40.9128 47.4128 39 49.8333 39Z" fill="#16AE44"/>
                 </svg>
-                    <p>30 Days Return</p>
-                </div>
-                <div>
-                    <svg width="45" height="52" viewBox="0 0 45 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22.5001 0C10.2493 0 0.214355 9.90625 0.214355 22V34C0.214355 36.5859 1.92377 38.7891 4.2663 39.625V40C4.2663 45.4922 8.83266 50 14.3962 50H16.992C17.6963 51.1953 18.9784 52 20.4741 52H24.5261C26.7578 52 28.578 50.2031 28.578 48C28.578 45.7969 26.7578 44 24.5261 44H20.4741C18.9784 44 17.6963 44.8047 16.992 46H14.3962C11.0407 46 8.31825 43.3125 8.31825 40H12.3702V22H4.2663C4.2663 12.0938 12.4652 4 22.5001 4C32.535 4 40.7338 12.0938 40.7338 22H32.6299V40H38.7079C42.0396 40 44.7858 37.2891 44.7858 34V22C44.7858 9.90625 34.7509 0 22.5001 0ZM4.2663 26H8.31825V36H6.29228C5.1685 36 4.2663 35.1094 4.2663 34V26ZM36.6819 26H40.7338V34C40.7338 35.1094 39.8317 36 38.7079 36H36.6819V26Z" fill="#16AE44"/>
+                <p>Free Shipping</p>
+            </div>
+            <div>
+                <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M24.4998 0C19.5615 0 16.235 1.91623 13.2514 3.51169C10.2679 5.10714 7.55864 6.48312 2.55174 6.48312H0.356934V8.64416C0.356934 25.3247 6.084 36.1805 11.8797 42.7481C17.6753 49.3156 23.6767 51.7299 23.6767 51.7299L24.4998 52L25.3228 51.7299C25.3228 51.7299 31.3243 49.3662 37.1199 42.8156C42.9156 36.2649 48.6427 25.3838 48.6427 8.64416V6.48312H46.4479C41.4667 6.48312 38.7317 5.10714 35.7482 3.51169C32.7646 1.91623 29.4381 0 24.4998 0ZM24.4998 4.32208C28.3407 4.32208 30.5441 5.6474 33.622 7.29351C36.2197 8.68636 39.6662 10.0201 44.1159 10.4675C43.6958 25.0883 38.7832 34.3825 33.8277 39.9792C29.3352 45.0526 25.5629 46.7409 24.4998 47.2052C23.4281 46.7325 19.6644 45.0019 15.1719 39.9117C10.2164 34.298 5.30382 25.0208 4.88372 10.4675C9.35049 10.0201 12.7799 8.68636 15.3776 7.29351C18.4555 5.6474 20.6589 4.32208 24.4998 4.32208ZM36.0911 15.7351L22.305 29.3091L15.1033 22.2182L11.9483 25.3247L20.7275 33.9688L22.305 35.4545L23.8825 33.9688L39.2461 18.8416L36.0911 15.7351Z" fill="#16AE44"/>
                 </svg>
-                    <p>24/7 Support</p>
-                </div>
+                <p>Secured Payment</p>
+            </div>
+            <div>
+                <svg width="53" height="52" viewBox="0 0 53 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M26.5 0C12.1628 0 0.5 11.6628 0.5 26C0.5 32.6523 3.00521 38.7292 7.13542 43.3333H2.66667V47.6667H15.6667V34.6667H11.3333V41.4375C7.33854 37.5104 4.83333 32.0514 4.83333 26C4.83333 14.0072 14.5072 4.33333 26.5 4.33333V0ZM31.375 0.473958L30.1563 4.67188C31.5866 4.91732 33.0085 5.29818 34.3542 5.82292L35.5052 1.625C34.151 1.12565 32.7969 0.744792 31.375 0.473958ZM37.3333 4.33333V17.3333H41.6667V10.5625C45.6699 14.4811 48.1667 19.9316 48.1667 26C48.1667 37.9928 38.4928 47.6667 26.5 47.6667V52C40.8372 52 52.5 40.3372 52.5 26C52.5 19.3307 49.944 13.2624 45.7969 8.66667H50.3333V4.33333H37.3333ZM18.6458 46.1771L17.4948 50.375C18.849 50.8744 20.2031 51.2552 21.625 51.526L22.8438 47.3281C21.4134 47.0827 19.9915 46.7018 18.6458 46.1771Z" fill="#16AE44"/>
+                </svg>
+                <p>30 Days Return</p>
+            </div>
+            <div>
+                <svg width="45" height="52" viewBox="0 0 45 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.5001 0C10.2493 0 0.214355 9.90625 0.214355 22V34C0.214355 36.5859 1.92377 38.7891 4.2663 39.625V40C4.2663 45.4922 8.83266 50 14.3962 50H16.992C17.6963 51.1953 18.9784 52 20.4741 52H24.5261C26.7578 52 28.578 50.2031 28.578 48C28.578 45.7969 26.7578 44 24.5261 44H20.4741C18.9784 44 17.6963 44.8047 16.992 46H14.3962C11.0407 46 8.31825 43.3125 8.31825 40H12.3702V22H4.2663C4.2663 12.0938 12.4652 4 22.5001 4C32.535 4 40.7338 12.0938 40.7338 22H32.6299V40H38.7079C42.0396 40 44.7858 37.2891 44.7858 34V22C44.7858 9.90625 34.7509 0 22.5001 0ZM4.2663 26H8.31825V36H6.29228C5.1685 36 4.2663 35.1094 4.2663 34V26ZM36.6819 26H40.7338V34C40.7338 35.1094 39.8317 36 38.7079 36H36.6819V26Z" fill="#16AE44"/>
+                </svg>
+                <p>24/7 Support</p>
             </div>
         </div>
         <div class="back-color"></div>
     </section>
 
-
-    <!-- for the introduction  -->
-    <section id="intro">
+    <!-- best sellers section -->
+    <section class="best-seller">
         <div class="container">
-            <h2 class="wow ">Pharm Authority</h2>
-            <p class="wow ">At Pharm Authority, we are proud to be an international healthcare exporter, distributor, and drop shipper. Our primary mission is to identify and introduce meaningful products that address unmet medical needs.
-                <br><br>We place a strong emphasis on quality and service, ensuring that our customers receive safe and effective healthcare products.</p>
-            <div class="buttons wow ">
-                <a href="https://pharmauthority.com/shop/"><button class="button-1">Our Products</button></a>
-                <a href="about us.html"><button class="button-2">About Us</button></a>
+            <h2 class="wow ">Best Sellers</h2>
+            <div class="products">
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v).</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
+                </div>
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">CenForce 50 (Generic Viagra 50 gr).</h3>
+                        <p class="product-price">$47 &#8209 $183</p>
+                    </div>
+                </div>
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">CenForce D 160 (Sildenafil Citrate1)</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
+                </div>
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
+                </div>
             </div>
+            <a href="https://pharmauthority.com/product-category/bestsellers/">
+                <button class="btn-1 wow ">
+                    <p>View More</p>
+                    <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
+                    </svg>               
+                </button>
+            </a>
         </div>
     </section>
 
-    <!-- for the Shop -->
-    <section id="shop">
-        <nav id="nav-categories">
-            <div class="container">
-                <div class="cat-menu">
-                    <button id="CatMenu"><svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 0C0.447716 0 0 0.447715 0 1C0 1.55228 0.447715 2 1 2H23C23.5523 2 24 1.55228 24 1C24 0.447715 23.5523 0 23 0H1ZM1 8C0.447716 8 0 8.44771 0 9C0 9.55229 0.447715 10 1 10H23C23.5523 10 24 9.55229 24 9C24 8.44771 23.5523 8 23 8H1ZM1 16C0.447716 16 0 16.4477 0 17C0 17.5523 0.447715 18 1 18H23C23.5523 18 24 17.5523 24 17C24 16.4477 23.5523 16 23 16H1Z" fill="black"/>
-                        </svg>
-                    </button>
-                    <h3>Categories</h3>
+    <!-- ED section  -->
+    <section class="ed">
+        <div class="container">
+            <h2 class="wow ">Erectile Dysfunction</h2>
+            <div class="products">
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
                 </div>
-                <ul id="CatList">
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/bestsellers/">Best Sellers</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/anti-aging/">Anti-Aging</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/">Erectile Dysfunction</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/mens-health/">Men's Health</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/womens-health/">Women's Health</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/shop/">Others</a>
-                    </li>
-                </ul>
-                <div id="search">
-                    <input type="search" id="search-value" placeholder="Search product">
-                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7.76685 0.5C12.0478 0.5 15.5338 3.98604 15.5338 8.26699C15.5338 10.1268 14.8815 11.8319 13.7863 13.1699L19.4173 18.801C19.7256 19.1093 19.7256 19.6092 19.4173 19.9175C19.109 20.2258 18.6091 20.2258 18.3008 19.9175L12.6698 14.2864C11.3318 15.3817 9.62668 16.034 7.76685 16.034C3.4859 16.034 -0.000143051 12.5479 -0.000143051 8.26699C-0.000143051 3.98604 3.4859 0.5 7.76685 0.5ZM7.76685 2.0534C4.32631 2.0534 1.55326 4.82646 1.55326 8.26699C1.55326 11.7075 4.32631 14.4806 7.76685 14.4806C11.2074 14.4806 13.9804 11.7075 13.9804 8.26699C13.9804 4.82646 11.2074 2.0534 7.76685 2.0534Z" fill="#777777"/>
-                    </svg>
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
+                </div>
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
+                </div>
+                <div class="item wow ">
+                    <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
+                    <div>
+                        <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
+                        <p class="product-price">$18 &#8209 $144</p>
+                    </div>
                 </div>
             </div>
-        </nav>
+            <a href="https://pharmauthority.com/product-category/erectile-dysfunction/">
+                <button class="btn-1 wow ">
+                <p>View More</p>
+                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
+                </svg>               
+            </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- promo images -->
+    <section class="promo">
         <div class="container">
-
-            <!-- promotions -->
-            <section id="promotions">
-                <h2 class="wow ">Promotions</h2>
-                <div>
-                    <div class="promo wow ">
-                        <div>
-                            <img src="/images/logo.svg" alt="company logo">
-                            <h2>Pharm<br>Authority</h2>
-                            <p>Your health our priority</p>
-                        </div>
-                        <p>Buy 100 ED pills of the NAIOM brand and receive 10 ED pills of the NAIOM brand for free!!!</p>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/"><button>Shop now</button></a>
-                    </div>
-                    <div class="promo wow ">
-                        <div>
-                            <img src="/images/logo.svg" alt="company logo">
-                            <h2>Pharm<br>Authority</h2>
-                            <p>Your health our priority</p>
-                        </div>
-                        <p>Enjoy Hair Care, Weight Loss, and Skin Care<br>Use Code: <span>PHARMA24</span>, 10% off.</p>
-                        <a href="https://pharmauthority.com/shop/"><button>Shop now</button></a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Best sellers  -->
-            <section id="best-sellers">
-                <h2 class="wow ">Best Sellers</h2>
-                <div class="products">
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v).</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">CenForce 50 (Generic Viagra 50 gr).</h3>
-                            <p class="product-price">$47 &#8209 $183</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">CenForce D 160 (Sildenafil Citrate1)</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://pharmauthority.com/product-category/bestsellers/">
-                    <button class="button-1 wow ">
-                        <p>View More</p>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
-                        </svg>               
-                    </button>
-                </a>
-            </section>
-
-            <!-- ED section  -->
-            <section id="ed">
-                <h2 class="wow ">Erectile Dysfunction</h2>
-                <div class="products">
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                    <div class="item wow ">
-                        <img src="/images/Careprost-enhanced-transformed-800x764.jpeg" alt="Careprost Eyelash Solution">
-                        <div>
-                            <h3 class="product-name">Careprost Eyelash Solution (Bimatoprost 0.03% w/v)</h3>
-                            <p class="product-price">$18 &#8209 $144</p>
-                        </div>
-                    </div>
-                </div>
-                <a href="https://pharmauthority.com/product-category/erectile-dysfunction/">
-                    <button class="button-1 wow ">
-                        <p>View More</p>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
-                        </svg>               
-                    </button>
-                </a>
-            </section>
-
-            <!-- Top categories  -->
-            <section id="categories">
-                <h2 class="wow ">Top Categories</h2>
-                <div>
-                    <a href="https://pharmauthority.com/product-category/erectile-dysfunction/">
-                        <div class="wow  c-ed">
-                            <p>Erectile Dysfunction</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/hair-care/">
-                        <div class="wow  c-hair">
-                            <p>Hair Care</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/skincare/">
-                        <div class="wow  c-skin">
-                            <p>Skin Care</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/herbal/">
-                        <div class="wow  c-herbal">
-                            <p>Herbal</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/specialty-medication/hiv-aids-medications/">
-                        <div class="wow  c-HIV">
-                            <p>HIV/AIDS Medications</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/specialty-medication/mental-health/">
-                        <div class="wow  c-mental">
-                            <p>Mental Health</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/specialty-medication/">
-                        <div class="wow  c-specialty">
-                            <p>Specialty Medications</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/weight-management/">
-                        <div class="wow  c-weight">
-                            <p>Weight Management</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/mens-health/">
-                        <div class="wow  c-men">
-                            <p>Men’s Health</p>
-                        </div>
-                    </a>
-                    <a href="https://pharmauthority.com/product-category/womens-health/">
-                        <div class="wow  c-women">
-                            <p>Women’s Health</p>
-                        </div>
-                    </a>
-                </div>
-                <a href="https://pharmauthority.com/shop/">
-                    <button class="button-1 wow ">
-                        <p>View All</p>
-                        <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="white"/>
-                        </svg>               
-                    </button>
-                </a>
-            </section>
+            <a href="#"><img src="/images/your-trusted-source-(edited).png" alt="banner image"></a>
+            <a href="#"><img class="big" src="/images/buy-100-get-10-free(edited).png.jpg" alt="banner image"></a>
+            <a href="#"><img src="/images/code-(edited).png" alt="banner image"></a>
         </div>
     </section>
 
     <!-- About us -->
-    <section id="about">
+    <section class="about">
         <div class="container">
             <img src="/images/about us.svg" alt="Illustration of a team">
             <div>
@@ -353,7 +258,7 @@
                 <p class="wow ">At Pharm Authority, we are proud to be an international healthcare exporter, distributor, and drop shipper. Our primary mission is to identify and introduce meaningful products that address unmet medical needs. We place a strong emphasis
                     on quality and service, ensuring that our customers receive safe and effective healthcare products.</p>
                 <a href="/about us.html">
-                    <button class="button-2 wow ">
+                    <button class="btn-2 wow ">
                         <p>Read About Us</p>
                         <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="#16AE44"/>
@@ -365,14 +270,14 @@
     </section>
 
     <!-- Refund policy -->
-    <section id="refund">
+    <section class="refund">
         <div class="container">
             <div>
                 <h2 class="wow ">Refund And Return Policy</h2>
                 <p class="wow ">Before returning or requesting for refund on any purchase made, please ensure to carefully read and review our refund and return policy.</p>
                 <div class="buttons wow ">
                     <a href="/about us.html#return_policy">
-                        <button class="button-1">
+                        <button class="btn-1">
                             <p>Refund And Return Policy</p>
                             <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM11.3536 4.35355C11.5488 4.15829 11.5488 3.84171 11.3536 3.64645L8.17157 0.464467C7.97631 0.269205 7.65973 0.269204 7.46447 0.464467C7.2692 0.659729 7.2692 0.976311 7.46447 1.17157L10.2929 4L7.46447 6.82843C7.2692 7.02369 7.2692 7.34027 7.46447 7.53553C7.65973 7.7308 7.97631 7.7308 8.17157 7.53553L11.3536 4.35355ZM1 4.5L11 4.5L11 3.5L1 3.5L1 4.5Z" fill="#ffffff"/>
@@ -385,238 +290,173 @@
         </div>
     </section>
 
-    <!-- faq -->
-    <section id="FAQ">
+    <!-- promo images -->
+    <section class="promo">
         <div class="container">
-            <div>
-                <h2>Frequently Asked Questions (FAQ)</h2>
-                <div class="dropdown_2">
+            <a href="#"><img src="/images/your-trusted-source-(edited).png" alt="banner image"></a>
+            <a href="#"><img class="big" src="/images/buy-100-get-10-free(edited).png.jpg" alt="banner image"></a>
+            <a href="#"><img src="/images/code-(edited).png" alt="banner image"></a>
+        </div>
+    </section>
+
+    <!-- faq -->
+    <section class="FAQ">
+        <div class="container">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            <div class="dropdown_2">
+                <div>
                     <div>
-                        <div>
-                            <h3>Are generic drugs secure?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>Are generic drugs secure?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>Yes. Each of our generic products must illustrate it is comparable to its brand-name product by appearing that it conveys the same amount of active ingredient into a patient’s bloodstream circulation system within the same amount
-                            of time as the brand-name product. Generic drugs that do so ought to have the same helpful impact and thus the same benefits and effects as their brand-name product, but at much less cost.</p>
                     </div>
+                    <p>Yes. Each of our generic products must illustrate it is comparable to its brand-name product by appearing that it conveys the same amount of active ingredient into a patient’s bloodstream circulation system within the same amount of
+                        time as the brand-name product. Generic drugs that do so ought to have the same helpful impact and thus the same benefits and effects as their brand-name product, but at much less cost.</p>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>What is the distinction between brand drugs and generic drugs?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>What is the distinction between brand drugs and generic drugs?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>The biggest difference between most brand-name drugs and generic versions is that the brand product costs significantly more. Brand and generic drugs are therapeutically and chemically equivalent. Generic drugs are required to
-                            have the same active ingredient, strength, dosage form, and route of administration as the brand-name product. Trademark laws in some countries require the drugs to look different, so the generic version may be a different
-                            color, a different shape, have a different taste, or contain inactive ingredients that are different.</p>
                     </div>
+                    <p>The biggest difference between most brand-name drugs and generic versions is that the brand product costs significantly more. Brand and generic drugs are therapeutically and chemically equivalent. Generic drugs are required to have
+                        the same active ingredient, strength, dosage form, and route of administration as the brand-name product. Trademark laws in some countries require the drugs to look different, so the generic version may be a different color, a
+                        different shape, have a different taste, or contain inactive ingredients that are different.</p>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>Why should you select to order from Pharm-Authority?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>Why should you select to order from Pharm-Authority?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>Pharm-Authority online has a long-standing reputation for reliability, we strive to provide our clients with the best possible experience and the leading conceivable involvement.<br><br>Pharm-Authority online has a long-standing
-                            reputation for reliability, we strive to provide our clients with the best possible experience and the leading conceivable involvement.</p>
-                        <ul>
-                            <li>Affordable prices that won’t break your bank account.</li>
-                            <li>Genuine, high-quality products</li>
-                            <li>Discreet payment methods, including Bitcoin.</li>
-                            <li>Secure shipping to protect your privacy.</li>
-                            <li>Fast, reliable express delivery to your door</li>
-                            <li>Monthly special offers and promotions to save you money.</li>
-                            <li>Daily deals on selected products so you can save even more</li>
-                            <li>Excellent customer service that you will love.</li>
-                        </ul>
                     </div>
+                    <p>Pharm-Authority online has a long-standing reputation for reliability, we strive to provide our clients with the best possible experience and the leading conceivable involvement.<br><br>Pharm-Authority online has a long-standing reputation
+                        for reliability, we strive to provide our clients with the best possible experience and the leading conceivable involvement.</p>
+                    <ul>
+                        <li>Affordable prices that won’t break your bank account.</li>
+                        <li>Genuine, high-quality products</li>
+                        <li>Discreet payment methods, including Bitcoin.</li>
+                        <li>Secure shipping to protect your privacy.</li>
+                        <li>Fast, reliable express delivery to your door</li>
+                        <li>Monthly special offers and promotions to save you money.</li>
+                        <li>Daily deals on selected products so you can save even more</li>
+                        <li>Excellent customer service that you will love.</li>
+                    </ul>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>How can I pay for my orders?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>How can I pay for my orders?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>Pharm-Authority Online accepts Visa, Mastercard credit cards, and Bitcoin currency.</p>
                     </div>
+                    <p>Pharm-Authority Online accepts Visa, Mastercard credit cards, and Bitcoin currency.</p>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>Is it secure to use my credit/debit card at pharmauthority.com?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>Is it secure to use my credit/debit card at pharmauthority.com?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>Yes. pharmauthority.com uses third-party payment processing services to process all credit/debit card payment transactions. These payment intermediaries are PCI-compliant, which is the most stringent level of certification standard
-                            that ensures all cardholders’ data is stored, processed, and transmitted securely by using the industry standard encryption technology.</p>
                     </div>
+                    <p>Yes. pharmauthority.com uses third-party payment processing services to process all credit/debit card payment transactions. These payment intermediaries are PCI-compliant, which is the most stringent level of certification standard
+                        that ensures all cardholders’ data is stored, processed, and transmitted securely by using the industry standard encryption technology.</p>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>Are there any limits on the sort of medicines I can get?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>Are there any limits on the sort of medicines I can get?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>Pharm-Authority Online will not handle any habit-forming or narcotic pharmaceuticals, also known as scheduled drugs or controlled substances in some countries. We specialize in chronic care medicines that many people must take
-                            to sustain or improve their lives.</p>
                     </div>
+                    <p>Pharm-Authority Online will not handle any habit-forming or narcotic pharmaceuticals, also known as scheduled drugs or controlled substances in some countries. We specialize in chronic care medicines that many people must take to sustain
+                        or improve their lives.</p>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>How can I check the status of my order?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>How can I check the status of my order?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>You’ll be able to check the status of your orders by logging into your account. This lets you track your orders in real-time. You can also check the status of your orders by contacting our client support team by providing them
-                            with the order tracking number.</p>
                     </div>
+                    <p>You’ll be able to check the status of your orders by logging into your account. This lets you track your orders in real-time. You can also check the status of your orders by contacting our client support team by providing them with
+                        the order tracking number.</p>
+                </div>
+                <div>
                     <div>
-                        <div>
-                            <h3>What if I can't find the products/medications I am seeking out on your site?</h3>
-                            <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <h3>What if I can't find the products/medications I am seeking out on your site?</h3>
+                        <svg width="11" height="7" viewBox="0 0 11 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M10.107 6.20928C10.2706 6.3705 10.5332 6.3705 10.6967 6.20928V6.20928C10.8635 6.04482 10.8635 5.77569 10.6967 5.61123L5.79905 0.782051L5.5 0.5L5.20095 0.782051L0.303266 5.61123C0.136472 5.77569 0.136472 6.04482 0.303266 6.20928V6.20928C0.46677 6.3705 0.729446 6.3705 0.892951 6.20928L5.5 1.66667L10.107 6.20928Z" fill="#777777"/>
                         </svg>
-                        </div>
-                        <p>Pharm-Authority stocks a wide range of pharmaceuticals and other healthcare items. Be that as it may, if you do not find what you are looking for, feel free to contact our drug specialists by emailing <span class="email_address">info@pharmauthority.com</span>.
-                            We will get back to you as soon as possible to let you know the accessibility of the medication/product you are looking for.</p>
                     </div>
+                    <p>Pharm-Authority stocks a wide range of pharmaceuticals and other healthcare items. Be that as it may, if you do not find what you are looking for, feel free to contact our drug specialists by emailing <span class="email_address">info@pharmauthority.com</span>.
+                        We will get back to you as soon as possible to let you know the accessibility of the medication/product you are looking for.</p>
                 </div>
             </div>
         </div>
     </section>
 
-
-    <!-- Blog -->
-    <section id="blog">
+    <!-- contact section -->
+    <section class="contact">
         <div class="container">
-            <h2 class="wow ">Blog</h2>
-            <div>
-                <a href="https://pharmauthority.com/understanding-the-basics-of-vardenafil-and-dapoxetine/">
-                    <div class="post wow ">
-                        <img src="/images/romantic-couple-eating-ice-cream-together-and-watc-2023-11-27-04-54-47-utc.webp" alt="Romantic couple">
-                        <p>Understanding the Basics of Vardenafil and Dapoxetine.</p>
-                    </div>
+            <img src="/images/logo.svg" alt="company logo">
+            <ul>
+                <li><a href="#">Refund Policy</a></li>
+                <li>|</li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li>|</li>
+                <li><a href="#">Terms of Use</a></li>
+                <li>|</li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <p class="wow ">At Pharm Authority, we are proud to be an international healthcare exporter, distributor, and drop shipper. Our primary mission is to identify and introduce meaningful products that address unmet medical needs. We place a strong emphasis on
+                quality and service, ensuring that our customers receive safe and effective healthcare products.</p>
+            <div class="contact-info">
+                <a href="#">
+                    <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_266_4033)">
+                            <path d="M7.99988 0.988281C5.17738 0.988281 2.87988 3.28578 2.87988 6.10828C2.87988 10.6245 7.56113 16.0108 7.75988 16.2383C7.82113 16.3083 7.90738 16.3483 7.99988 16.3483C8.09863 16.342 8.17863 16.3083 8.23988 16.2383C8.43863 16.007 13.1199 10.5283 13.1199 6.10828C13.1199 3.28578 10.8224 0.988281 7.99988 0.988281ZM7.99988 4.50828C9.05988 4.50828 9.91988 5.36828 9.91988 6.42828C9.91988 7.48828 9.05988 8.34828 7.99988 8.34828C6.93988 8.34828 6.07988 7.48828 6.07988 6.42828C6.07988 5.36828 6.93988 4.50828 7.99988 4.50828Z" fill="#16AE44"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_266_4033">
+                            <rect width="16" height="16" fill="white" transform="translate(0 0.667969)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    <p>Anthoupli 1, Nicosia, Cyprus</p>
                 </a>
-                <a href="https://pharmauthority.com/the-hidden-hindrance-unraveling-the-impacts-of-erectile-dysfunction-on-work-productivity-and-awareness/">
-                    <div class="post wow ">
-                        <img src="/images/woman-comforting-man-wearing-pajamas-suffering-wit-2023-11-27-04-56-07-utc.webp" alt="woman comforting man">
-                        <p class="wow ">The Hidden Hindrance: Unraveling the Impacts of Erectile Dysfunction on Work Productivity and Awareness.</p>
-                    </div>
+                <a href="#">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.6124 19.4679C15.6062 19.4679 15.5999 19.4679 15.5937 19.4679C12.5874 19.3695 9.06558 16.4554 6.63901 14.0273C4.20933 11.5992 1.29526 8.07573 1.20151 5.08354C1.16714 4.03354 3.7437 2.16635 3.77026 2.1476C4.43901 1.68198 5.1812 1.8476 5.48589 2.26948C5.69214 2.55542 7.64526 5.51479 7.85776 5.85073C8.07808 6.19917 8.04526 6.71792 7.77026 7.23823C7.6187 7.52729 7.11558 8.41167 6.87964 8.82417C7.13433 9.18667 7.80776 10.0757 9.19839 11.4664C10.5906 12.857 11.4781 13.532 11.8421 13.7867C12.2546 13.5507 13.139 13.0476 13.4281 12.896C13.9406 12.6242 14.4562 12.5898 14.8078 12.8054C15.1671 13.0257 18.1187 14.9882 18.3906 15.1773C18.6187 15.3382 18.7656 15.6132 18.7953 15.9335C18.8234 16.257 18.7234 16.5992 18.5156 16.8976C18.4984 16.9226 16.6531 19.4679 15.6124 19.4679Z" fill="#16AE44"/>
+                        </svg>
+                    <p>+44 20 3885 2787</p>
                 </a>
-                <a href="https://pharmauthority.com/the-ability-of-retinoids-to-reduce-wrinkles-and-skin-aging/">
-                    <div class="post wow ">
-                        <img src="/images/women-standing-by-each-other-2023-11-27-05-32-41-utc.webp" alt="women standing by each other">
-                        <p class="wow ">The Ability of Retinoids to Reduce Wrinkles and Skin Aging.</p>
-                    </div>
-                </a>
-                <a href="https://pharmauthority.com/innovative-healthcare-solutions-pharm-authoritys-commitment-to-unmet-medical-needs/">
-                    <div class="post wow ">
-                        <img src="/images/stethoscope-laptop-and-pills-on-the-white-table-2023-11-27-05-04-17-utc.webp" alt="stethoscope">
-                        <p class="wow ">Innovative Healthcare Solutions: Pharm Authority’s Commitment to Unmet Medical Needs.</p>
-                    </div>
+                <a href="#">
+                    <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_266_4037)">
+                            <path d="M0 3.46875V4.61875L10 12.5563L20 4.71875V3.46875H0ZM0 5.63125V17.8688H20V5.73125L10.25 13.3813C10.1781 13.4375 10.0875 13.4688 10 13.4688C9.9125 13.4688 9.82344 13.4391 9.75 13.3813L0 5.63125Z" fill="#16AE44"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_266_4037">
+                            <rect width="20" height="20" fill="white" transform="translate(0 0.667969)"/>
+                            </clipPath>
+                            </defs>
+                        </svg>
+                    <p>info@pharmauthority.com</p>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <footer id="contact">
+    <!-- footer -->
+    <footer>
         <div class="container">
-            <div class="logo">
-                <a href="#"><img src="/images/logo.svg" alt="Company logo"></a>
-            </div>
-            <div>
-                <ul class="wow ">
-                    <li>
-                        <h3>Erectile Dysfunction</h3>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/dapoxetine/">Dapoxetine</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-cialis-tadalafil/">Generic Cialis (Tadalafil)</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-levitra-vardenafil/">Generic Levitra (Vardenafil)</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-satendra-avanafil/">Generic Satendra (Avanafil)</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/generic-viagra-sildenafil-citrate/">Generic Viagra (Sildenafil Citrate)</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/product-category/erectile-dysfunction/sildenafil-dapoxetine/">Sildenafil + Dapoxetine</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="wow ">
-                    <li>
-                        <h3>Quick Links</h3>
-                    </li>
-                    <li>
-                        <a href="/about us.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/contact-us/">Contact Us</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.trackdesk.com/sign-up">Become An Affiliate</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/my-account/">My Account</a>
-                    </li>
-                    <li>
-                        <a href="/about us.html#shipping_policy">Shipping Policy</a>
-                    </li>
-                    <li>
-                        <a href="/about us.html#privacy_policy">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="/about us.html#return_policy">Refund And Return Policy</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div>
-                <ul class="wow ">
-                    <li>
-                        <h3>Customer Service</h3>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/my-account/">My Profile</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/order-tracking/">Order Tracking</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/my-account/orders">My Orders</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/wishlist/">My Wishlist</a>
-                    </li>
-                    <li>
-                        <a href="https://pharmauthority.com/faqs/">FAQs</a>
-                    </li>
-                </ul>
-            </div>
-            <div id="mail" class="wow ">
-                <h3>Send Us An Email</h3>
-                <input type="text" name="name" id="name" placeholder="Name">
-                <input type="email" name="email" id="email" placeholder="Email">
-                <textarea name="message" id="message" placeholder="Message"></textarea>
-                <button class="button-1">Send</button>
-            </div>
+            <img src="/images/pmn.png" alt="payment options">
+            <p>Copyright © 2024 PharmAuthority. All Rights Reserved.</p>
         </div>
     </footer>
-
-
-    <script src="/script.js"></script>
-    <script>
-        new WOW().init();
-    </script>
 </body>
 
 </html>
