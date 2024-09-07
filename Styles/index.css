@@ -233,7 +233,7 @@
         color: #FFFFFF;
     }
     .hero {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), url(/images/national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg) lightgray 50% / cover no-repeat;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.70) 0%, rgba(0, 0, 0, 0.90) 100%), url(/images/national-cancer-institute-cw2Zn2ZQ9YQ-unsplash.jpg) lightgray 50% / cover no-repeat;
     }
     .hero .container {
         padding: 9.375rem 1.25rem;
