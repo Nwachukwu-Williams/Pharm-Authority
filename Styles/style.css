@@ -404,14 +404,14 @@ footer img {
         justify-content: center;
     }
     .promo img {
-        width: calc(70vw - 2.5rem);
+        width: calc(80vw - 2.5rem);
         height: auto;
-        margin: -1rem;
+        margin: -.8rem;
         border-radius: 1.75rem;
         box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.1);
     }
     .promo img.big {
-        width: calc(80vw - 2.5rem);
+        width: calc(100vw - 2.5rem);
         height: auto;
         border-radius: 1.875rem;
     }
