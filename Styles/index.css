@@ -326,7 +326,7 @@
     }
     .about .container {
         flex-direction: column-reverse;
-        padding: 50px 20px;
+        padding: 3.125rem 1.25rem;
     }
     .about .container div,
     .refund .container>div {
@@ -335,8 +335,9 @@
     }
     .refund .container {
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 3.125rem 1.25rem;
     }
+    .about img,
     .refund img {
         max-width: calc(100vw - 3rem);
     }
