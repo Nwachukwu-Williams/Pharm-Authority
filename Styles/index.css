@@ -338,6 +338,6 @@
         padding: 50px 20px;
     }
     .refund img {
-        width: 100%;
+        max-width: calc(100vw - 3rem);
     }
 }
