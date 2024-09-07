@@ -404,7 +404,7 @@ footer img {
         justify-content: center;
     }
     .promo img {
-        width: calc(80vw - 2.5rem);
+        width: calc(90vw - 2.5rem);
         height: auto;
         margin: -.8rem;
         border-radius: 1.75rem;

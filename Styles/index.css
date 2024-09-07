@@ -337,4 +337,7 @@
         flex-direction: column;
         padding: 50px 20px;
     }
+    .refund img {
+        width: 100%;
+    }
 }
