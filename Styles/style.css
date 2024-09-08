@@ -186,13 +186,6 @@ header a.active {
     font-size: 1rem;
 }
 
-.banner .subscribe {
-    background-color: transparent;
-    border: 2px solid var(--primary-color);
-    text-transform: capitalize;
-    max-width: 610px;
-}
-
 .banner .container div div {
     display: flex;
     align-items: flex-end;
@@ -280,7 +273,7 @@ header a.active {
     border-color: var(--stroke-color);
 }
 
-.contact-info a {
+.contact-info div {
     display: flex;
     align-items: center;
     gap: .5em;
@@ -418,11 +411,6 @@ footer img {
     .banner .code p span {
         color: white;
         font-size: 1rem;
-    }
-    .banner .subscribe {
-        background-color: transparent;
-        border: 2px solid var(--primary-color);
-        text-transform: capitalize;
     }
     .banner .container div div {
         display: flex;

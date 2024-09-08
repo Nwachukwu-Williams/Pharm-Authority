@@ -36,6 +36,13 @@
 
 .dropdown_2 ul {
     display: none;
+    list-style-type: disc;
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 150%;
+    padding-left: 60px;
+    padding-bottom: 20px;
 }
 
 .dropdown_2 div div:hover {
@@ -53,4 +60,5 @@
 .dropdown_2 .active p,
 .dropdown_2 .active ul {
     display: block;
+    text-align: left;
 }
