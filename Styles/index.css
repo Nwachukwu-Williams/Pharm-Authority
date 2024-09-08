@@ -322,7 +322,8 @@
         padding: 3.125rem 1.25rem;
     }
     .products {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: auto auto;
     }
     .about .container {
         flex-direction: column-reverse;

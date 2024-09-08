@@ -1,0 +1,375 @@
+#eligible-items {
+    background-color: var(--background-color);
+}
+
+#eligible-items .container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.products {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+}
+
+.item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.item img {
+    width: 200px;
+    max-width: 100%;
+}
+
+.variations {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    display: none;
+    flex: 1;
+    flex-grow: 1;
+}
+
+tr {
+    border-bottom: 1px solid var(--stroke-color);
+    width: 700px;
+    flex: 1;
+    flex-grow: 1;
+}
+
+.variations div {
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.variations div h3 {
+    color: white;
+}
+
+.variations svg {
+    transform: rotate(180deg);
+}
+
+tr:nth-child(even) {
+    background-color: var(--stroke-color);
+}
+
+td {
+    padding: .25rem .5rem;
+    text-align: left;
+    font-family: 'Barlow', sans-serif;
+    font-size: 1rem;
+    width: 150px;
+}
+
+td:has(input) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    flex: 1;
+    flex-grow: 1;
+}
+
+td:has(input) button {
+    padding: 3px;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+td input {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+
+td:has(.btn-2) {
+    align-items: flex-end;
+    justify-content: right;
+}
+
+td .btn-2 {
+    padding: .25rem .5rem;
+    border-radius: 10px;
+}
+
+.variations:has(table.active) svg {
+    transform: rotate(0deg);
+}
+
+table.active {
+    display: block;
+}
+
+div:has(>.cart) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    max-width: 400px;
+    position: sticky;
+    top: 120px;
+}
+
+.remove {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border: none;
+    padding: 0px;
+    gap: 5px;
+    color: red;
+    width: fit-content;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.cart h2 {
+    padding-left: 20px;
+}
+
+.cart>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+}
+
+.cart-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    background: #FFFFFF;
+    /* Stroke */
+    border-bottom: 1px solid var(--stroke-color);
+}
+
+.cart-item img {
+    width: 135px;
+}
+
+.cart-item p {
+    text-align: left;
+}
+
+.cart-item>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.cart-item div:has(>.remove) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    height: 53px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cart-item div:has(>input) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item div:has(>input) button {
+    padding: 3px;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cart-item input {
+    background-color: transparent;
+    border: none;
+    width: 50px;
+    text-align: center;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 20px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.summary>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 5px;
+    width: 100%;
+}
+
+.summary>div>div:not(.discount) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    width: 100%;
+}
+
+.discount {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: var(--stroke-color);
+}
+
+.discount>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.coupon>div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.coupon input {
+    font-family: 'Barlow', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    width: 100%;
+    border-width: 0 0 1px;
+    border-bottom: solid var(--stroke-color);
+}
+
+.summary h3 {
+    font-size: 24px;
+}
+
+.summary h3 span {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration-line: line-through;
+    color: #777777;
+}
+
+.check-out {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.total div {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.total p {
+    text-align: right;
+    color: #777777;
+}
+
+@media (max-width: 992px) {
+    #eligible-items .container {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .products {
+        width: 100%;
+    }
+    .item {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .item>div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+        flex: 1;
+    }
+    .variations {
+        width: 100%;
+    }
+    .variations>div {
+        width: 100%;
+    }
+    div:has(>.cart) {
+        width: 100%;
+        max-width: 100%;
+    }
+    .cart-item img {
+        width: 100px;
+    }
+    .cart-item div:has(>.remove) {
+        width: 100%;
+    }
+}
