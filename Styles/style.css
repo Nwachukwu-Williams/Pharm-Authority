@@ -151,6 +151,17 @@ header a img {
     border-radius: 20px;
 }
 
+section.banner {
+    display: none;
+    padding: 20px;
+}
+
+section.banner img {
+    width: 728px;
+    height: auto;
+    border-radius: 20px;
+}
+
 .promo .container {
     display: flex;
     align-items: center;
